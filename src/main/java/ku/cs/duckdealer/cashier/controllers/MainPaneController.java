@@ -3,13 +3,15 @@ package ku.cs.duckdealer.cashier.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Menu;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.GridPane;
 
 public class MainPaneController {
 
     private MainController mainCtrl;
     private FlowPane mainPane;
+
     @FXML
-    private FlowPane leftPane, rightPane;
+    private GridPane leftPane, rightPane;
 
 
     public FlowPane getMainPane() {
@@ -20,11 +22,11 @@ public class MainPaneController {
         this.mainPane = mainPane;
     }
 
-    public FlowPane getLeftPane() {
+    public GridPane getLeftPane() {
         return leftPane;
     }
 
-    public FlowPane getRightPane() {
+    public GridPane getRightPane() {
         return rightPane;
     }
 

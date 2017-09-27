@@ -3,10 +3,7 @@ package ku.cs.duckdealer.cashier.controllers;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -16,7 +13,7 @@ import java.io.IOException;
 public class MainController {
 
     private Stage stage;
-    private String title = "Cashier Manger";
+    private String title = "Cashier Manager";
 
     private MainPaneController mainPaneCtrl;
     private cashierItemListController cashierListCtrl;
@@ -45,7 +42,7 @@ public class MainController {
         this.mainPaneCtrl.setMainCtrl(this);
 
         FXMLLoader cashierListPaneLoader = new FXMLLoader(getClass().getResource("/cashierItemList.fxml"));
-        GridPane cashierListPane = cashierListPaneLoader.load();
+        BorderPane cashierListPane = cashierListPaneLoader.load();
         this.cashierListCtrl = cashierListPaneLoader.getController();
         this.cashierListCtrl.setMainPane(cashierListPane);
         this.cashierListCtrl.setMainCtrl(this);

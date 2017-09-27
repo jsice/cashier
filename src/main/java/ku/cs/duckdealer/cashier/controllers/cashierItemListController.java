@@ -15,6 +15,7 @@ public class cashierItemListController {
     private ArrayList<Label> labels;
     private MainController mainCtrl;
 
+
     public Pane getMainPane() {
         return mainPane;
     }

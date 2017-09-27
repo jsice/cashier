@@ -24,7 +24,5 @@ public class selectedItemsController {
         this.mainPane = mainPane;
     }
 
-    public void setMainCtrl(MainController mainCtrl) {
-        this.mainCtrl = mainCtrl;
-    }
+    public void setMainCtrl(MainController mainCtrl) { this.mainCtrl = mainCtrl; }
 }
